@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: bisque;
+}
+
+header {
+    background-color: whitesmoke;
+}
+
+.header_container {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.header_container .titulo{
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 55%;
+}
+
+.header_container .lista{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+nav{
+    margin-top: 2rem;
+}
+
+ul {
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+}
+
+li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    
+}
+
+.container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+
+.container div{
+    height: 13rem;
+    width: 14rem;
+    text-align: end;
+    margin: auto;
+    margin-right: 0;
+    padding: 1rem;    
+}
+
+p{
+    text-align: center;
+    margin: 5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.container_1{
+    background-color: red;
+}
+
+.container_2{
+    background-color: blue;
+}
+
+.container_3{
+    background-color: green;
+}
+
+.container_0 {
+    width: 45%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border: 1px solid black;
+    
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+
+.container_0 div{
+    height: 13rem;
+    width: 33.33%;
+    text-align: center;
+    margin: auto;    
+}
+
+.container_4 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid black;
+    justify-content: space-between;   
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+
+.container_4 div{
+    height: 13rem;
+    width: 20%;
+    text-align: justify;
+        
+}
