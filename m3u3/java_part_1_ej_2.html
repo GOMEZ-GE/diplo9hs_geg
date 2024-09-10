@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Ejercicio II</title>
+</head>
+
+<body>
+
+    <script>
+
+        const valor_1 = parseInt(prompt(`Ingrese el primer valor`, ''));
+        const valor_2 = parseInt(prompt(`Ingrese el segundo valor`, ''));
+        const valor_3 = parseInt(prompt(`Ingrese el tercer valor`, ''));
+        const valor_4 = parseInt(prompt(`Ingrese el cuarto valor`, ''));
+        const valor_5 = parseInt(prompt(`Ingrese el quinto valor`, ''));
+
+        let array = [valor_1, valor_2, valor_3, valor_4, valor_5];
+
+        let x = 1;
+
+        const cuantos = 5;
+
+        let indice = 0;
+
+        document.write(`Los numeros ingresados son :<br>`);
+
+        while (x <= cuantos) {
+            document.write(`${array[indice]}<br>`);
+            indice++;
+            x++;
+        }
+
+        document.write(`<br>`);
+        
+        document.write(`Y el mayor de ellos es:<br>`);
+
+        if (array[0] > array[1] && array[0] > array[2] && array[0] > array[3] && array[0] > array[4]) {
+            document.write(`${array[0]}`);
+        } else if (array[1] > array[2] && array[1] > array[3] && array[1] > array[4]) {
+            document.write(`${array[1]}`);
+        } else if (array[2] > array[3] && array[2] > array[4]) {
+            document.write(`${array[2]}`);
+        } else if (array[3] > array[4]) {
+            document.write(`${array[3]}`);
+        } else {
+            document.write(`${array[4]}`);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

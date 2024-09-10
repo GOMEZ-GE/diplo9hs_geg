@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Ejercicio I</title>
+</head>
+
+<body>
+
+    <script>
+
+        var medios = ["a pie", "en bicicleta", "en colectivo","auto", "en avion"];
+
+        const distancia = parseInt(prompt('Ingrese la distacia a recorrer en mts:', ''));
+
+        if (distancia <= 1000) {
+            document.write(`La mejor opción para recorrer la distancia es  ${medios[0]}`);
+        } else if (distancia > 1000 && distancia <= 10000) {
+            document.write(`La mejor opción para recorrer la distancia es  ${medios[1]}`);
+        }else if (distancia > 10000 && distancia <= 30000) {
+            document.write(`La mejor opción para recorrer la distancia es  ${medios[2]}`);
+        }else if (distancia > 30000 && distancia <= 100000) {
+            document.write(`La mejor opción para recorrer la distancia es  ${medios[3]}`);
+        }else {
+            document.write(`La mejor opción para recorrer la distancia es  ${medios[4]}`);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
