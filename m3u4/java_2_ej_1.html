@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 2 Ej I</title>
+</head>
+
+<body id="body">
+    <style>
+        section {
+            position: relative;
+            top: 35vh;
+            justify-items: center;
+            margin: auto;
+        }
+
+        .container_cuadrados {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+        }
+
+        #button_1 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: none;
+        }
+
+        #button_2 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border: none;
+        }
+
+        #button_3 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: none;
+        }
+    </style>
+    <section>
+        <div class="container_cuadrados">
+            <button onclick="cambiarFondo(1)" id="button_1" class="button"></button>
+            <button onclick="cambiarFondo(2)" id="button_2" class="button"></button>
+            <button onclick="cambiarFondo(3)" id="button_3" class="button"></button>
+        </div>
+    </section>
+
+    <script>
+
+        const body = document.getElementById('body');
+
+        function cambiarFondo(numColor) {
+
+            if(numColor == 1){
+                body.style.backgroundColor = "red";
+            }
+            if(numColor == 2){
+                body.style.backgroundColor = "green";
+            }
+            if(numColor == 3){
+                body.style.backgroundColor = "blue";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
